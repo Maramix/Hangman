@@ -1,0 +1,294 @@
+{
+  "words": [
+    {
+      "category": "animals",
+      "word": "cow",
+      "id": 1
+    },
+    {
+      "category": "animals",
+      "word": "cameleon",
+      "id": 2
+    },
+    {
+      "category": "animals",
+      "word": "dog",
+      "id": 3
+    },
+    {
+      "category": "animals",
+      "word": "zebra",
+      "id": 4
+    },
+    {
+      "category": "animals",
+      "word": "lizzard",
+      "id": 5
+    },
+    {
+      "category": "animals",
+      "word": "ciapek",
+      "id": 6
+    },
+    {
+      "category": "fruits",
+      "word": "banana",
+      "id": 7
+    },
+    {
+      "category": "fruits",
+      "word": "apple",
+      "id": 8
+    },
+    {
+      "category": "fruits",
+      "word": "strawberry",
+      "id": 9
+    },
+    {
+      "category": "fruits",
+      "word": "kiwi",
+      "id": 10
+    },
+    {
+      "category": "fruits",
+      "word": "pomelo",
+      "id": 11
+    },
+    {
+      "category": "fruits",
+      "word": "pineapple",
+      "id": 12
+    },
+    {
+      "category": "animals",
+      "word": "snake",
+      "id": 13
+    },
+    {
+      "category": "animals",
+      "word": "turtle",
+      "id": 14
+    },
+    {
+      "category": "tools",
+      "word": "hammer",
+      "id": 15
+    },
+    {
+      "category": "tools",
+      "word": "screwdriver",
+      "id": 16
+    },
+    {
+      "category": "tools",
+      "word": "ruler",
+      "id": 17
+    },
+    {
+      "category": "animals",
+      "word": "lion",
+      "id": 18
+    },
+    {
+      "category": "fruits",
+      "word": "kiwi",
+      "id": 19
+    },
+    {
+      "category": "furniture",
+      "word": "armchair",
+      "id": 19
+    },
+    {
+      "category": "climbing gear",
+      "word": "rope",
+      "id": 19
+    },
+    {
+      "category": "climbing gear",
+      "word": "duffel",
+      "id": 20
+    },
+    {
+      "category": "climbing gear",
+      "word": "harness",
+      "id": 21
+    },
+    {
+      "category": "climbing gear",
+      "word": "jug",
+      "id": 22
+    },
+    {
+      "category": "climbing gear",
+      "word": "ridge",
+      "id": 23
+    },
+    {
+      "category": "furniture",
+      "word": "table",
+      "id": 24
+    },
+    {
+      "category": "animals",
+      "word": "chinchilla",
+      "id": 25
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 26
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 27
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 28
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 29
+    },
+    {
+      "category": "animals",
+      "word": "asd",
+      "id": 30
+    },
+    {
+      "category": "animals",
+      "word": "asd",
+      "id": 31
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 32
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 33
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 34
+    },
+    {
+      "category": "tools",
+      "word": "asd",
+      "id": 35
+    },
+    {
+      "category": "fruits",
+      "word": "alo",
+      "id": 36
+    },
+    {
+      "category": "tools",
+      "word": "asd",
+      "id": 37
+    },
+    {
+      "category": "tools",
+      "word": "asd",
+      "id": 38
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 39
+    },
+    {
+      "category": "animals",
+      "word": "asd",
+      "id": 40
+    },
+    {
+      "category": "animals",
+      "word": "asd",
+      "id": 41
+    },
+    {
+      "category": "animals",
+      "word": "asd",
+      "id": 42
+    },
+    {
+      "category": "fruits",
+      "word": "aasd",
+      "id": 43
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 44
+    },
+    {
+      "category": "animals",
+      "word": "asd",
+      "id": 45
+    },
+    {
+      "category": "animals",
+      "word": "asd",
+      "id": 46
+    },
+    {
+      "category": "animals",
+      "word": "asd",
+      "id": 47
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 48
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 49
+    },
+    {
+      "category": "fruits",
+      "word": "asd",
+      "id": 50
+    },
+    {
+      "category": "fruits",
+      "word": "mango",
+      "id": 51
+    },
+    {
+      "category": "fruits",
+      "word": "kiwi",
+      "id": 52
+    },
+    {
+      "category": "animals",
+      "word": "kiwi",
+      "id": 53
+    },
+    {
+      "category": "climbing gear",
+      "word": "jumar",
+      "id": 54
+    },
+    {
+      "category": "climbing gear",
+      "word": "grigri",
+      "id": 55
+    },
+    {
+      "category": "fruits",
+      "word": "pomelo",
+      "id": 56
+    }
+  ]
+}
