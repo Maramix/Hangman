@@ -31,6 +31,7 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
       })
       .catch((err) => setMessage(err.message));
     setWord("");
+    setCategory("");
     setWordDatabase(newDatabase);
   }
 
