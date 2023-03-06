@@ -94,7 +94,7 @@ const Home = () => {
       })
       .then((data) => {
         setWordDatabase(data.record.words);
-        //console.log(data.record.words);
+        console.log(wordDatabase);
       })
       .catch((error) => console.log("Could not fetch the data - " + error));
   }, [gameOutcome]);
