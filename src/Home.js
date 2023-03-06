@@ -14,7 +14,7 @@ import logo10 from "./images/logo10.png";
 import SubmitWord from "./SubmitWord";
 
 const Home = () => {
-  const url = "https://api.jsonbin.io/v3/b/63fe6dbcebd26539d08711f8";
+  const url = "https://api.jsonbin.io/v3/b/64064a58c0e7653a05837d0b";
   const xMasterKey =
     "$2b$10$uFqgtUlSDPdjk3yTIcmUxO5ewwlcDhpOQnOJ6ygTI7.ah/Xbgrdba";
   const logos = [
@@ -94,9 +94,10 @@ const Home = () => {
       })
       .then((data) => {
         setWordDatabase(data.record.words);
-        console.log(wordDatabase);
+        //console.log(wordDatabase);
       })
       .catch((error) => console.log("Could not fetch the data - " + error));
+    // eslint-disable-next-line
   }, [gameOutcome]);
 
   const handleSubmit = (e) => {

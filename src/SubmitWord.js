@@ -5,20 +5,21 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
   const [word, setWord] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleAddWord = (e) => {
+  function handleAddWord(e) {
     e.preventDefault();
-    // setWordDatabase([
-    //   ...wordDatabase.words,
-    //   { category: category, word: word, id: wordDatabase.length + 1 },
-    // ]);
-    console.log(wordDatabase);
+    const newDatabase = new Array(...wordDatabase, {
+      category: category,
+      word: word,
+      id: wordDatabase.length + 1,
+    });
+
     fetch(url, {
-      method: "POST",
+      method: "PUT",
       headers: {
         "X-Master-Key": xMasterKey,
         "content-type": "application/json",
       },
-      body: JSON.stringify({ words: wordDatabase }),
+      body: JSON.stringify({ words: newDatabase }),
     })
       .then((res) => {
         if (res.ok) {
@@ -30,7 +31,8 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
       })
       .catch((err) => setMessage(err.message));
     setWord("");
-  };
+    setWordDatabase(newDatabase);
+  }
 
   let uniqueCategories = [
     ...new Set(wordDatabase.map((item) => item.category)),
