@@ -1,21 +1,24 @@
 import { useState } from "react";
 
-const SubmitWord = ({ url, xMasterKey, wordDatabase }) => {
+const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
   const [category, setCategory] = useState("");
   const [word, setWord] = useState("");
   const [message, setMessage] = useState("");
 
   const handleAddWord = (e) => {
     e.preventDefault();
-    const wordToAdd = { category, word };
-    console.log(wordToAdd);
+    setWordDatabase([
+      ...wordDatabase,
+      { category, word, id: wordDatabase.length + 1 },
+    ]);
+    console.log(JSON.stringify(wordDatabase));
     fetch(url, {
-      method: "PUT",
+      method: "POST",
       headers: {
         "X-Master-Key": xMasterKey,
         "content-type": "application/json",
       },
-      body: JSON.stringify({ words: wordToAdd }),
+      body: JSON.stringify({ words: wordDatabase }),
     })
       .then((res) => {
         if (res.ok) {

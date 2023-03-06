@@ -94,7 +94,7 @@ const Home = () => {
       })
       .then((data) => {
         setWordDatabase(data.record.words);
-        console.log(data.record.words);
+        //console.log(data.record.words);
       })
       .catch((error) => console.log("Could not fetch the data - " + error));
   }, [gameOutcome]);
@@ -265,6 +265,7 @@ const Home = () => {
             url={url}
             xMasterKey={xMasterKey}
             wordDatabase={wordDatabase}
+            setWordDatabase={setWordDatabase}
           />
         )}
       </>
