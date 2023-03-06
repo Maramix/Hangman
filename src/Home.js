@@ -252,7 +252,7 @@ const Home = () => {
       <div>
         <button onClick={handleReset}>Reset Game!</button>
         <h2>The answer was: {password}</h2>
-        <h1>You Hang!!!</h1>
+        <h1>You Hang!</h1>
       </div>
     );
   } else if (gameOutcome === 5) {
