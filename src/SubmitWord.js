@@ -9,7 +9,7 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
     e.preventDefault();
     setWordDatabase([
       ...wordDatabase,
-      { category, word, id: wordDatabase.length + 1 },
+      { category: category, word: word, id: wordDatabase.length + 1 },
     ]);
     console.log(JSON.stringify(wordDatabase));
     fetch(url, {
