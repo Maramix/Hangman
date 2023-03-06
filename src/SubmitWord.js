@@ -7,10 +7,10 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
 
   const handleAddWord = (e) => {
     e.preventDefault();
-    setWordDatabase([
-      ...wordDatabase.words,
-      { category: category, word: word, id: wordDatabase.length + 1 },
-    ]);
+    // setWordDatabase([
+    //   ...wordDatabase.words,
+    //   { category: category, word: word, id: wordDatabase.length + 1 },
+    // ]);
     console.log(wordDatabase);
     fetch(url, {
       method: "POST",
