@@ -11,7 +11,7 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
       ...wordDatabase.words,
       { category: category, word: word, id: wordDatabase.length + 1 },
     ]);
-    console.log(wordDatabase.words, JSON.stringify(wordDatabase));
+    console.log(wordDatabase);
     fetch(url, {
       method: "POST",
       headers: {
