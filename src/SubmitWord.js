@@ -2,19 +2,31 @@ import { useState } from "react";
 
 const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
   const [category, setCategory] = useState("");
+  const [newCategory, setNewCategory] = useState("");
   const [word, setWord] = useState("");
   const [message, setMessage] = useState("");
 
   function handleAddWord(e) {
     e.preventDefault();
-    const newDatabase = [
-      ...wordDatabase,
-      {
-        category: category,
-        word: word,
-        id: wordDatabase.length + 1,
-      },
-    ];
+    let newDatabase;
+    if (category === "new")
+      newDatabase = [
+        ...wordDatabase,
+        {
+          category: newCategory,
+          word: word,
+          id: wordDatabase.length + 1,
+        },
+      ];
+    else
+      newDatabase = [
+        ...wordDatabase,
+        {
+          category: category,
+          word: word,
+          id: wordDatabase.length + 1,
+        },
+      ];
 
     fetch(url, {
       method: "PUT",
@@ -54,6 +66,9 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
             onChange={(e) => setCategory(e.target.value)}
           >
             <option className="option"></option>
+            <option className="option" value="new">
+              -new-
+            </option>
             {uniqueCategories.map((option) => (
               <option className="option" key={option} value={option}>
                 {option}
@@ -62,6 +77,17 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
           </select>
         )}
         <div>
+          {category === "new" && (
+            <div>
+              <h3>Set the category:</h3>
+              <input
+                type="text"
+                required
+                value={newCategory}
+                onChange={(e) => setNewCategory(e.target.value)}
+              />
+            </div>
+          )}
           <label>Set the word:</label>
           <br />
           <input
