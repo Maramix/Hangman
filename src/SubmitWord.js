@@ -84,7 +84,7 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
                 type="text"
                 required
                 value={newCategory}
-                onChange={(e) => setNewCategory(e.target.value)}
+                onChange={(e) => setNewCategory(e.target.value.toLowerCase())}
               />
             </div>
           )}
@@ -94,7 +94,7 @@ const SubmitWord = ({ url, xMasterKey, wordDatabase, setWordDatabase }) => {
             type="text"
             required
             value={word}
-            onChange={(e) => setWord(e.target.value)}
+            onChange={(e) => setWord(e.target.value.toLowerCase())}
           />
         </div>
         <button>Submit!</button>

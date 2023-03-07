@@ -71,7 +71,7 @@ h1{
   text-transform: capitalize;
 }
 
-p, label{
+p, label, h3{
   margin:0;
   font-size: 1.2rem;
 }
